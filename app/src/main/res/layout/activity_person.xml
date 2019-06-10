@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".person">
+
+    <TextView
+        android:id="@+id/nameFirstDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nameLastDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/addressDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/cityDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/stateDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/zipDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/editNameFirstDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first name:"
+
+        />
+
+    <EditText
+        android:id="@+id/editNameLastDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter last name"
+
+        />
+
+    <EditText
+        android:id="@+id/editAddressDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter address"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editStateDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter state "
+
+        />
+
+    <EditText
+        android:id="@+id/editCityDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city "
+
+        />
+
+    <EditText
+        android:id="@+id/editZipDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ZIP "
+
+        />
+
+    <Button
+        android:id="@+id/btnProcessInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Press To Proceed" />
+
+</LinearLayout>

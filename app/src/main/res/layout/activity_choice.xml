@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".choice">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:background="#DCDCDC"
+            android:id="@+id/toCalculator"
+            android:layout_width="198dp"
+            android:layout_columnSpan="1"
+            android:text="Calculator" />
+
+        <Button
+            android:id="@+id/toCamera"
+            android:layout_width="195dp"
+            android:layout_columnSpan="1"
+            android:background="#DCDCDC"
+            android:text="Camera" />
+
+        <Button
+            android:id="@+id/toPerson"
+            android:layout_columnSpan="1"
+            android:layout_width="195dp"
+            android:background="#DCDCDC"
+            android:text="Person" />
+
+        <Button
+            android:id="@+id/toPersonList"
+            android:layout_width="195dp"
+            android:layout_columnSpan="1"
+            android:background="#DCDCDC"
+            android:text="Person List" />
+
+        <Button
+            android:id="@+id/toMedia"
+            android:layout_width="195dp"
+            android:layout_columnSpan="1"
+            android:background="#DCDCDC"
+            android:text="Media" />
+        <Button
+            android:id="@+id/toWeb"
+            android:layout_width="195dp"
+            android:layout_columnSpan="1"
+            android:background="#DCDCDC"
+            android:text="Web Browser" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back" />
+</RelativeLayout>
